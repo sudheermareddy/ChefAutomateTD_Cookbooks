@@ -67,7 +67,7 @@ default['audit']['fail_if_not_present'] = false
 
 # control how often inspec scans are run, if not on every node converge
 # notes: false value will result in running inspec scan every converge
-default['audit']['interval']['enabled'] = true
+default['audit']['interval']['enabled'] = false
 
 # controls how often inspec scans are run (in minutes)
 # notes: only used if interval is enabled above
