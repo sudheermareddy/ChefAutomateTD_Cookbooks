@@ -1,0 +1,21 @@
+{
+   "name": "auditrun",
+   "description": "Audit run role.",
+   "json_class": "Chef::Role",
+   "default_attributes": {
+     "chef_client": {
+       "interval": 180,
+       "splay": 60
+     }
+   },
+   "override_attributes": {
+   },
+   "chef_type": "role",
+   "run_list": ["recipe[audit::default]",
+				"recipe[chef-client::default]",
+                "recipe[chef-client::delete_validation]"
+              
+   ],
+   "env_run_lists": {
+   }
+}
